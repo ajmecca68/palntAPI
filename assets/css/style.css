@@ -2,11 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f0f0f0;
     display: flex;
     flex-direction: column;
     align-items: center;
+     /* Center content vertically */
     min-height: 100vh;
-    background-color: #f0f0f0;
 }
 
 header {
@@ -37,24 +38,43 @@ header {
 }
 
 #infoContainer {
+    display: flex; /* Display flex to arrange divs side by side */
+    flex-wrap: wrap; /* Allow wrapping if screen is narrow */
+    justify-content: center; /* Center divs horizontally */
+    align-items: center; /* Center divs vertically */
+    margin-top: 20px; /* Add space below the header */
+    width: 100%; /* Take up full width */
+    background-color: antiquewhite;
+}
+
+#perunialInfo {
+    flex: 1; /* Allow divs to share available space equally */
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px; /* Add spacing between divs */
+    max-width: calc(50% - 20px); /* Limit divs to half of the available width minus spacing */
+    text-align: center;
+}
+
+#expandedInfo {
+    flex: 1; /* Allow divs to share available space equally */
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px; /* Add spacing between divs */
+    max-width: calc(50% - 20px); /* Limit divs to half of the available width minus spacing */
+}
+
+h2 {
+    background-color: darkred;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
     width: 100%;
 }
 
-
-#perunialInfo {
-    background-color: antiquewhite;
-    width: 40%;
-    float: left;
-    padding-left: 20px;
-    margin-left: 20px;
-    margin-top: 20px;
-}
-
-#trefleInfo {
-    background-color: grey;
-    width: 40%;
-    float: right;
-    margin-right: 20px;
-    margin-top:20px;
-
+#infoHeader {
+    background-color: darkred;
+    width: 100%;
 }

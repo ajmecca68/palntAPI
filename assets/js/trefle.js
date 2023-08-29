@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (plantName) {
             // Trefle API call
             const trefleToken = "LRnoSZ98nrCPuGd81qZ0Bez69FQxN4-ur3OgZReMxOk";
-            const trefleUrl = `https://trefle.io/api/v1/plants?token=${trefleToken}&filter[common_name]=${encodeURIComponent(plantName)}`;
+            const trefleUrl = `https://trefle.io/api/v1/plants/search?token=${trefleToken}&q=${encodeURIComponent(plantName)}`;
             fetch(trefleUrl)
             .then(response => response.json())
             .then(data => {
