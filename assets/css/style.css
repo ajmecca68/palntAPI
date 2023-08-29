@@ -36,6 +36,25 @@ header {
     cursor: pointer;
 }
 
-#plantInfo {
+#infoContainer {
+    width: 100%;
+}
+
+
+#perunialInfo {
+    background-color: antiquewhite;
+    width: 40%;
+    float: left;
+    padding-left: 20px;
+    margin-left: 20px;
     margin-top: 20px;
+}
+
+#trefleInfo {
+    background-color: grey;
+    width: 40%;
+    float: right;
+    margin-right: 20px;
+    margin-top:20px;
+
 }
