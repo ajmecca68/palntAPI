@@ -1,12 +1,12 @@
 const plantSearchButton = document.getElementById("plantSearchButton");
 const plantNameInput = document.getElementById("plantName");  // Use "plantName" instead of "plantNameInput"
 const expandedInfoDiv = document.getElementById("expandedInfo");
-const chatGptApiKey = "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";
+const chatGptApiKey = "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";
 
 plantSearchButton.addEventListener("click", async () => {
     const plantName = plantNameInput.value;
 
-    const prompt = `Please give me a 2 to 3 paragraph statement about the plant ${plantName}, with bulleted key points and important information.`;
+    const prompt = `Please give me a 2 to 3 paragraph statement about the plant ${plantName}, with bulleted key points and important information.${plantName} is a plant.`;
     infoHeader.textContent = plantName;
     const response = await fetch("https://api.openai.com/v1/chat/completions", {
         method: "POST",
